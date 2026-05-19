@@ -26,7 +26,7 @@ export default function Services() {
             <article key={s.id} className="service-card" style={{ animationDelay: `${i * 60}ms` }}>
               <div className="service-number">0{i + 1}</div>
               <div className="service-icon">
-                <Icon name={s.icon} size={30} color="#00DF82" />
+                <Icon name={s.icon} size={30} color="#B3CFE5" />
               </div>
               <h3 className="service-title">{s.title}</h3>
               <p className="service-desc">{s.description}</p>

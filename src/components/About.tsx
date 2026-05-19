@@ -9,7 +9,7 @@ export default function About() {
           <div className="about-image about-image-2" />
           <div className="about-card">
             <div className="about-card-icon">
-              <Icon name="award" size={22} color="#00DF82" />
+              <Icon name="award" size={22} color="#B3CFE5" />
             </div>
             <div>
               <strong>ISO Certified</strong>
@@ -19,21 +19,21 @@ export default function About() {
         </div>
 
         <div className="about-copy">
-          <span className="eyebrow">About Alphadoors</span>
+          <span className="eyebrow">About Alpha Line</span>
           <h2 className="section-title">
             Engineered security for{" "}
             <span className="accent">modern spaces.</span>
           </h2>
           <p className="about-lead">
             From high-tech access control to precision-engineered automatic
-            doors, Alphadoors combines reliable hardware with intelligent
+            doors, Alpha Line combines reliable hardware with intelligent
             automation so your property stays secure, efficient and future-ready.
           </p>
 
           <ul className="about-points">
             <li>
               <span className="check">
-                <Icon name="shield" size={16} color="#03624C" />
+                <Icon name="shield" size={16} color="#4A7FA7" />
               </span>
               <div>
                 <strong>End-to-end installation</strong>
@@ -45,7 +45,7 @@ export default function About() {
             </li>
             <li>
               <span className="check">
-                <Icon name="bolt" size={16} color="#03624C" />
+                <Icon name="bolt" size={16} color="#4A7FA7" />
               </span>
               <div>
                 <strong>Smart & scalable systems</strong>
@@ -57,7 +57,7 @@ export default function About() {
             </li>
             <li>
               <span className="check">
-                <Icon name="clock" size={16} color="#03624C" />
+                <Icon name="clock" size={16} color="#4A7FA7" />
               </span>
               <div>
                 <strong>Round-the-clock support</strong>

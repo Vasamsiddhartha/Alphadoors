@@ -63,6 +63,13 @@ export const services: Service[] = [
     icon: "garage",
   },
   {
+    id: "facial-recognition",
+    title: "Facial Recognition Biometric",
+    description:
+      "AI-powered facial recognition for touchless, high-accuracy identity verification in offices, data centres and restricted zones.",
+    icon: "shield",
+  },
+  {
     id: "rolling-shutter",
     title: "Automatic Rolling Shutter",
     description:

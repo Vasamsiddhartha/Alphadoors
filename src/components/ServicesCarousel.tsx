@@ -35,7 +35,7 @@ const slides: ServiceSlide[] = [
       "HD, IP and AI-powered CCTV cameras for round-the-clock monitoring of homes, offices and industrial sites with live mobile access.",
   },
   {
-    src: `${base}services/gate-barrier.jpg`,
+    src: `${base}services/Gate B.webp`,
     tag: "Vehicular Access",
     title: "Gate Barriers",
     subtitle: "Precision Access Management",
@@ -43,12 +43,20 @@ const slides: ServiceSlide[] = [
       "High-speed boom barriers for parking lots, compounds and commercial entrances — with vehicle detection and remote integration.",
   },
   {
-    src: `${base}services/sliding-gate.webp`,
+    src: `${base}services/Automatic-Sliding-Gate.webp`,
     tag: "Automation",
     title: "Automatic Sliding Gate",
     subtitle: "Smart Gate Automation",
     description:
       "Heavy-duty sliding gate operators built for smooth, silent and secure automated entry — remote-controlled from your phone or car.",
+  },
+  {
+    src: `${base}services/facial-recognition-concept-biometric.jpg`,
+    tag: "Biometric Security",
+    title: "Facial Recognition Biometric",
+    subtitle: "Next-Gen Identity Verification",
+    description:
+      "AI-powered facial recognition systems for touchless, high-accuracy identity verification — ideal for offices, data centres and restricted zones.",
   },
   {
     src: `${base}services/rolling-shutter.jpg`,
@@ -83,7 +91,7 @@ export default function ServicesCarousel() {
           <p className="svc-intro">
             Nine specialised services under one trusted roof — from intelligent
             access control and CCTV to heavy-duty industrial doors. Every
-            Alphadoors install is engineered for longevity, safety and
+            Alpha Line install is engineered for longevity, safety and
             seamless daily operation.
           </p>
         </div>
@@ -107,16 +115,29 @@ export default function ServicesCarousel() {
               border-radius: 24px;
               overflow: hidden;
               position: relative;
+              /* prevent 3-D transform blurring */
+              -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
+              -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+              isolation: isolate;
+            }
+            .svc-swiper .swiper-slide img {
+              /* force crisp rendering through 3-D transforms */
+              -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
+              image-rendering: auto;
+              will-change: transform;
             }
             .svc-swiper .swiper-pagination-bullet {
-              background: #03624c !important;
+              background: #1A3D63 !important;
               opacity: 0.35;
               width: 8px;
               height: 8px;
               transition: all 0.3s;
             }
             .svc-swiper .swiper-pagination-bullet-active {
-              background: #03624c !important;
+              background: #1A3D63 !important;
               opacity: 1;
               width: 24px;
               border-radius: 4px;
@@ -140,9 +161,9 @@ export default function ServicesCarousel() {
             loop
             autoplay={{ delay: 3000, disableOnInteraction: true }}
             coverflowEffect={{
-              rotate: 32,
+              rotate: 18,       /* reduced from 32 → less extreme angle = sharper images */
               stretch: 0,
-              depth: 120,
+              depth: 100,
               modifier: 1,
               slideShadows: true,
             }}
@@ -156,15 +177,14 @@ export default function ServicesCarousel() {
           >
             {slides.map((slide, i) => (
               <SwiperSlide key={i}>
-                {/* Image */}
                 <img
                   src={slide.src}
                   alt={slide.title}
                   className="svc-img"
+                  loading="eager"
+                  decoding="sync"
                 />
-                {/* Overlay */}
                 <div className="svc-overlay" />
-                {/* Content */}
                 <div className="svc-slide-content">
                   <span className="svc-tag">{slide.tag}</span>
                   <div className="svc-slide-body">

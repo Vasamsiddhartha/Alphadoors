@@ -28,7 +28,7 @@ export default function Features() {
     <section id="features" className="section features">
       <div className="container">
         <div className="features-head">
-          <span className="eyebrow eyebrow-light">Why Alphadoors</span>
+          <span className="eyebrow eyebrow-light">Why Alpha Line</span>
           <h2 className="section-title features-title">
             Smart Features Built{" "}
             <span className="features-accent">For Security.</span>
@@ -43,7 +43,7 @@ export default function Features() {
           {features.map((f) => (
             <div key={f.title} className="feature-card">
               <div className="feature-icon">
-                <Icon name={f.icon} size={28} color="#00DF82" />
+                <Icon name={f.icon} size={28} color="#B3CFE5" />
               </div>
               <h3 className="feature-title">{f.title}</h3>
               <p className="feature-desc">{f.desc}</p>
@@ -57,7 +57,7 @@ export default function Features() {
         <div className="features-cta">
           <div>
             <h3 className="features-cta-title">
-              Ready to secure your space with Alphadoors?
+              Ready to secure your space with Alpha Line?
             </h3>
             <p>
               Get a free on-site assessment and a detailed quote within 24

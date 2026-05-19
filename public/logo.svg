@@ -1,0 +1,44 @@
+<svg width="220" height="56" viewBox="0 0 220 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ag" x1="0" y1="56" x2="56" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#B3CFE5"/>
+      <stop offset="48%"  stop-color="#4A7FA7"/>
+      <stop offset="100%" stop-color="#1A3D63"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ── Alpha mark (56 × 56 canvas) ── -->
+  <!-- Inner circle outline -->
+  <circle cx="28" cy="28" r="13" stroke="#0A1931" stroke-width="1.2" fill="none"/>
+  <!-- Outer border circle (partial – matches the ring arc) -->
+  <path d="M 42 39 A 20 20 0 1 0 42 17" stroke="#0A1931" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+  <!-- Main blue ring arc (~280°, gap on right side) -->
+  <path d="M 42 39 A 20 20 0 1 0 42 17" stroke="url(#ag)" stroke-width="8.5" stroke-linecap="round" fill="none"/>
+  <!-- Arrow tail – extends from ring gap diagonally upper-right -->
+  <path d="M 42 39 A 20 20 0 1 0 42 17" stroke="#0A1931" stroke-width="0.8" stroke-linecap="round" fill="none"/>
+  <!-- Tail line -->
+  <line x1="42" y1="17" x2="52" y2="5" stroke="#0A1931"    stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="42" y1="17" x2="52" y2="5" stroke="url(#ag)"   stroke-width="7"   stroke-linecap="round"/>
+  <!-- Arrowhead -->
+  <polygon points="52,5  43,5  45,14" fill="#1A3D63" stroke="#0A1931" stroke-width="0.8" stroke-linejoin="round"/>
+
+  <!-- ── Wordmark ── -->
+  <!-- ALPHA LINE -->
+  <text
+    x="70" y="26"
+    font-family="'Space Grotesk', 'Helvetica Neue', Arial, sans-serif"
+    font-weight="700"
+    font-size="21"
+    fill="#0A1931"
+    letter-spacing="1.5"
+  >ALPHA LINE</text>
+  <!-- TECHNICAL SERVICES EST. -->
+  <text
+    x="71" y="42"
+    font-family="'Plus Jakarta Sans', 'Helvetica Neue', Arial, sans-serif"
+    font-weight="400"
+    font-size="9"
+    fill="#4A7FA7"
+    letter-spacing="2.8"
+  >TECHNICAL SERVICES EST.</text>
+</svg>

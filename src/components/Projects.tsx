@@ -1,27 +1,33 @@
 const projects = [
   {
+    tag: "Infrastructure",
+    title: "Sharjah Airport Sub Station",
+    desc: "Full CCTV surveillance system and structured cabling installation across the airport sub station facility.",
+    gradient: "linear-gradient(135deg, #0A1931 0%, #1A3D63 100%)",
+  },
+  {
+    tag: "Hospitality & Sports",
+    title: "Al Ain Equestrian, Shooting & Golf Club",
+    desc: "Complete automatic door and gate barrier solutions across all entry and exit points of the club.",
+    gradient: "linear-gradient(135deg, #1A3D63 0%, #4A7FA7 100%)",
+  },
+  {
     tag: "Commercial",
-    title: "Corporate HQ — Dubai Marina",
-    desc: "Integrated access control + CCTV across 14 floors.",
-    gradient: "linear-gradient(135deg, #03624C 0%, #000 100%)",
+    title: "Dubai Properties Group",
+    desc: "All electrical and civil works, stainless steel bollard lights and barrier gate systems.",
+    gradient: "linear-gradient(135deg, #4A7FA7 0%, #0A1931 100%)",
   },
   {
-    tag: "Industrial",
-    title: "Logistics Hub — Jebel Ali",
-    desc: "Sectional overhead doors and high-speed barriers.",
-    gradient: "linear-gradient(135deg, #000 0%, #03624C 100%)",
+    tag: "Corporate",
+    title: "Office Park Building",
+    desc: "Premium automatic sliding glass door installation — engineered for seamless, high-traffic daily use.",
+    gradient: "linear-gradient(135deg, #0A1931 20%, #4A7FA7 100%)",
   },
   {
-    tag: "Retail",
-    title: "Flagship Mall — Abu Dhabi",
-    desc: "Sliding glass doors and 4K surveillance network.",
-    gradient: "linear-gradient(135deg, #00DF82 0%, #03624C 100%)",
-  },
-  {
-    tag: "Residential",
-    title: "Private Villa — Al Barsha",
-    desc: "Automatic sliding gate, garage door and smart access.",
-    gradient: "linear-gradient(135deg, #03624C 0%, #00DF82 100%)",
+    tag: "Residential Community",
+    title: "Golf Jumeirah Estate Community",
+    desc: "Large-scale gate barrier deployment across the full community — 20 machines installed and commissioned.",
+    gradient: "linear-gradient(135deg, #1A3D63 0%, #0A1931 100%)",
   },
 ];
 
@@ -33,8 +39,8 @@ export default function Projects() {
           <div>
             <span className="eyebrow">Our Projects</span>
             <h2 className="section-title">
-              Built across the{" "}
-              <span className="accent">UAE skyline.</span>
+              Trusted across the{" "}
+              <span className="accent">UAE.</span>
             </h2>
           </div>
           <a href="#contact" className="btn btn-ghost">

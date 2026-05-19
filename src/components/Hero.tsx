@@ -15,53 +15,56 @@ export default function Hero() {
         <div className="hero-overlay" />
       </div>
 
-      <div className="container hero-content">
-        <span className="hero-eyebrow">
-          <span className="dot" /> Smart security & automation since 2010
-        </span>
+      {/* Outer container centres within page, inner hero-content pins text to LEFT */}
+      <div className="container hero-container">
+        <div className="hero-content">
+          <span className="hero-eyebrow">
+            <span className="dot" /> Smart security &amp; automation since 2010
+          </span>
 
-        <h1 className="hero-title">
-          Securing entrances.<br />
-          <span className="hero-accent">Empowering spaces.</span>
-        </h1>
+          <h1 className="hero-title">
+            Securing entrances.<br />
+            <span className="hero-accent">Empowering spaces.</span>
+          </h1>
 
-        <p className="hero-sub">
-          Alphadoors designs and installs intelligent security, access control,
-          and automatic door solutions for homes, commercial buildings and
-          industrial facilities across the UAE.
-        </p>
+          <p className="hero-sub">
+            Alpha Line designs and installs intelligent security, access control,
+            and automatic door solutions for homes, commercial buildings and
+            industrial facilities across the UAE.
+          </p>
 
-        <div className="hero-cta">
-          <a href="#services" className="btn btn-accent">
-            Explore Services <span className="arrow">→</span>
-          </a>
-          <a href="#contact" className="btn btn-light">
-            <span className="play-icon">
-              <Icon name="play" size={12} color="#03624C" />
-            </span>
-            Book a Site Visit
-          </a>
-        </div>
-
-        <div className="hero-stats">
-          <div>
-            <strong>15+</strong>
-            <span>Years of expertise</span>
+          <div className="hero-cta">
+            <a href="#services" className="btn btn-accent">
+              Explore Services <span className="arrow">→</span>
+            </a>
+            <a href="#contact" className="btn btn-light">
+              <span className="play-icon">
+                <Icon name="play" size={12} color="#1A3D63" />
+              </span>
+              Book a Site Visit
+            </a>
           </div>
-          <div>
-            <strong>1200+</strong>
-            <span>Projects delivered</span>
-          </div>
-          <div>
-            <strong>24/7</strong>
-            <span>Support & monitoring</span>
+
+          <div className="hero-stats">
+            <div>
+              <strong>15+</strong>
+              <span>Years of expertise</span>
+            </div>
+            <div>
+              <strong>1200+</strong>
+              <span>Projects delivered</span>
+            </div>
+            <div>
+              <strong>24/7</strong>
+              <span>Support &amp; monitoring</span>
+            </div>
           </div>
         </div>
       </div>
 
       <div className="hero-badge">
         <div className="hero-badge-icon">
-          <Icon name="shield" size={22} color="#00DF82" />
+          <Icon name="shield" size={22} color="#B3CFE5" />
         </div>
         <div>
           <strong>Certified Installers</strong>

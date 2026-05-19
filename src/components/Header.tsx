@@ -22,22 +22,12 @@ export default function Header() {
   return (
     <header className={`site-header ${scrolled ? "is-scrolled" : ""}`}>
       <div className="container header-inner">
-        <a href="#home" className="brand" aria-label="Alphadoors home">
-          <span className="brand-mark" aria-hidden>
-            <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
-              <rect x="2" y="2" width="28" height="28" rx="8" fill="#03624C" />
-              <path
-                d="M10 22L16 8l6 14M12.5 18h7"
-                stroke="#00DF82"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </span>
-          <span className="brand-text">
-            Alpha<span>doors</span>
-          </span>
+        <a href="#home" className="brand" aria-label="Alpha Line home">
+          <img
+            src={`${import.meta.env.BASE_URL}Logo.jpeg`}
+            alt="Alpha Line Technical Services"
+            className="brand-logo"
+          />
         </a>
 
         <nav className={`nav ${open ? "is-open" : ""}`}>
